@@ -46,7 +46,7 @@ function mouseMoveHandler(e) {
 function drawPaddle() {
     ctx.beginPath()
     ctx.roundRect(paddleX, canvas.height - paddleHeight, paddleWidth, paddleHeight, 30)
-    ctx.fillStyle = '#333'
+    ctx.fillStyle = '#ccc'
     ctx.fill()
     ctx.closePath()
 }
@@ -55,7 +55,7 @@ function drawPaddle() {
 function drawBall() {
     ctx.beginPath()
     ctx.arc(x, y, ballRadius, 0, Math.PI * 2)
-    ctx.fillStyle = '#333'
+    ctx.fillStyle = '#ccc'
     ctx.fill()
     ctx.closePath()
 }
@@ -71,7 +71,7 @@ function drawBricks() {
                 bricks[c][r].y = brickY
                 ctx.beginPath()
                 ctx.roundRect(brickX, brickY, brickWidth, brickHeight, 30)
-                ctx.fillStyle = '#333'
+                ctx.fillStyle = '#ccc'
                 ctx.fill()
                 ctx.closePath()
             }
@@ -82,7 +82,7 @@ function drawBricks() {
 //Оценка игры
 function trackScore() {
     ctx.font = 'bold 16px sans-serif'
-    ctx.fillStyle = '#333'
+    ctx.fillStyle = '#ccc'
     ctx.fillText('Баллы : ' + score, 8, 24)
 }
 
